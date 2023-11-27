@@ -8,14 +8,16 @@ import {
 } from 'react-router-dom'
 
 import './style.css'
-import Home from './views/home'
+import Page from './views/page'
+import LandingPage from './views/landing-page'
 import NotFound from './views/not-found'
 
 const App = () => {
   return (
     <Router>
       <Switch>
-        <Route component={Home} exact path="/" />
+        <Route component={Page} exact path="/page" />
+        <Route component={LandingPage} exact path="/" />
         <Route component={NotFound} path="**" />
         <Redirect to="**" />
       </Switch>

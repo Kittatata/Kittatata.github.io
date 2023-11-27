@@ -10,8 +10,8 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <Helmet>
-        <title>Comfortable Opulent Human</title>
-        <meta property="og:title" content="Comfortable Opulent Human" />
+        <title>I am Kitta</title>
+        <meta property="og:title" content="I am Kitta" />
       </Helmet>
       <div className="home-header">
         <header data-thq="thq-navbar" className="home-navbar-interactive">
@@ -201,5 +201,6 @@ const Home = (props) => {
     </div>
   )
 }
+
 
 export default Home
