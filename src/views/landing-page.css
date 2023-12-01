@@ -17,6 +17,7 @@
   width: 100%;
   height: auto;
   display: flex;
+  position: relative;
   max-width: 1400px;
   align-items: center;
   padding-top: 30px;
@@ -118,14 +119,6 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.landing-page-text1 {
-  font-size: 22px;
-  font-style: normal;
-  font-family: "Send Flowers";
-  font-weight: 400;
-  margin-bottom: var(--dl-space-space-halfunit);
-  text-transform: capitalize;
-}
 .landing-page-text2 {
   font-size: 22px;
   font-style: normal;
@@ -158,6 +151,14 @@
   margin-bottom: var(--dl-space-space-halfunit);
   text-transform: capitalize;
 }
+.landing-page-text6 {
+  font-size: 22px;
+  font-style: normal;
+  font-family: "Send Flowers";
+  font-weight: 400;
+  margin-bottom: var(--dl-space-space-halfunit);
+  text-transform: capitalize;
+}
 .landing-page-main {
   width: auto;
   height: auto;
@@ -166,14 +167,13 @@
   padding-left: var(--dl-space-space-doubleunit);
   padding-right: var(--dl-space-space-doubleunit);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-quadruple);
   justify-content: flex-start;
   background-color: var(--dl-color-gray-white);
 }
 .landing-page-cards-container {
   width: 100%;
   display: flex;
-  grid-gap: var(--dl-space-space-doubleunit);
+  grid-gap: var(--dl-space-space-unit);
   flex-wrap: wrap;
   max-width: 1000px;
   margin-top: 0px;
@@ -185,16 +185,20 @@
 .landing-page-navlink {
   display: contents;
 }
-.landing-page-component2 {
+.landing-page-camera-card {
   text-decoration: none;
 }
-.landing-page-text7 {
-  color: var(--dl-color-gray-500);
+.landing-page-navlink1 {
+  display: contents;
+}
+.landing-page-component2 {
+  text-decoration: none;
 }
 .landing-page-footer {
   width: 100%;
   height: 78px;
   display: flex;
+  position: relative;
   max-width: 1400px;
   align-items: center;
   padding-top: 32px;
@@ -203,7 +207,7 @@
   padding-bottom: 32px;
   justify-content: space-between;
 }
-.landing-page-text8 {
+.landing-page-text7 {
   font-size: 28px;
   font-family: "Send Flowers";
 }

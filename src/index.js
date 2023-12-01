@@ -8,16 +8,22 @@ import {
 } from 'react-router-dom'
 
 import './style.css'
-import Page from './views/page'
+import CameraProjectPage from './views/camera-project-page'
 import LandingPage from './views/landing-page'
+import QuestionMarkPage from './views/question-mark-page'
 import NotFound from './views/not-found'
 
 const App = () => {
   return (
     <Router>
       <Switch>
-        <Route component={Page} exact path="/page" />
+        <Route
+          component={CameraProjectPage}
+          exact
+          path="/camera-project-page"
+        />
         <Route component={LandingPage} exact path="/" />
+        <Route component={QuestionMarkPage} exact path="/question-mark-page" />
         <Route component={NotFound} path="**" />
         <Redirect to="**" />
       </Switch>

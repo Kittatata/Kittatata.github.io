@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
 import NavigationLinks from '../components/navigation-links'
-import PlaceCard from '../components/place-card'
+import ProjectCard from '../components/project-card'
 import './landing-page.css'
 
 const LandingPage = (props) => {
@@ -18,7 +18,7 @@ const LandingPage = (props) => {
         <header data-role="Header" className="landing-page-header">
           <span className="landing-page-text">- Kitta Production -</span>
           <div className="landing-page-nav">
-            <NavigationLinks rootClassName="rootClassName17"></NavigationLinks>
+            <NavigationLinks rootClassName="rootClassName10"></NavigationLinks>
           </div>
           <div data-role="BurgerMenu" className="landing-page-burger-menu">
             <svg viewBox="0 0 1024 1024" className="landing-page-icon">
@@ -42,7 +42,7 @@ const LandingPage = (props) => {
                   </svg>
                 </div>
               </div>
-              <NavigationLinks rootClassName="rootClassName18"></NavigationLinks>
+              <NavigationLinks rootClassName="rootClassName11"></NavigationLinks>
             </div>
             <div>
               <svg
@@ -69,49 +69,57 @@ const LandingPage = (props) => {
       </div>
       <div className="landing-page-container2">
         <div className="landing-page-sidebar">
-          <span className="landing-page-text1">All</span>
-          <span className="landing-page-text2">Arts</span>
-          <span className="landing-page-text3">Games</span>
-          <span className="landing-page-text4">Hardware</span>
-          <span className="landing-page-text5">Programming</span>
+          <span>
+            Side Bar and some project descriptions are still under development!
+          </span>
+          <span className="landing-page-text2">All</span>
+          <span className="landing-page-text3">Arts</span>
+          <span className="landing-page-text4">Games</span>
+          <span className="landing-page-text5">Hardware</span>
+          <span className="landing-page-text6">Programming</span>
         </div>
         <div id="main-section" className="landing-page-main">
           <div className="landing-page-cards-container">
-            <Link to="/page" className="landing-page-navlink">
-              <PlaceCard
+            <Link to="/camera-project-page" className="landing-page-navlink">
+              <ProjectCard
                 image="/project images/camera_project-300h.jpg"
+                description="Prototype camera system with FPGA, camera sensor, and TFT LCD display in System Verilog and C."
                 project_title="Camera Project"
-                rootClassName="place-card-root-class-name"
-                className="landing-page-component2"
-              ></PlaceCard>
+                rootClassName="project-card-root-class-name"
+                className="landing-page-camera-card"
+              ></ProjectCard>
             </Link>
-            <PlaceCard
-              image="https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;h=1000"
-              project_title="Rome"
-            ></PlaceCard>
-            <PlaceCard
-              image="https://images.unsplash.com/photo-1513342791620-b106dc487c94?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;h=1000"
-              project_title="Cluj-Napoca"
-            ></PlaceCard>
-            <PlaceCard
-              image="https://images.unsplash.com/photo-1551634979-2b11f8c946fe?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;h=1000"
-              project_title="Paris"
-            ></PlaceCard>
-            <PlaceCard
-              image="https://images.unsplash.com/photo-1585211969224-3e992986159d?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;h=1000"
-              project_title="Amsterdam"
-            ></PlaceCard>
-            <PlaceCard
-              image="https://images.unsplash.com/photo-1564221710304-0b37c8b9d729?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;h=1000"
-              project_title="Barcelona"
-            ></PlaceCard>
+            <Link to="/question-mark-page" className="landing-page-navlink1">
+              <ProjectCard
+                image="/project images/question_mark-300h.jpg"
+                description=" Winner of Google Change the Game. A philosophical game."
+                project_title="?"
+                className="landing-page-component2"
+              ></ProjectCard>
+            </Link>
+            <ProjectCard
+              image="/project images/guess_in_which_hand-300h.jpg"
+              description="Pure hardware finite state machine with flip-flops and logic gates. Note: Arduino is power supply."
+              project_title="Guess-in-Which-Hand"
+            ></ProjectCard>
+            <ProjectCard
+              image="/project images/missile_command-300h.png"
+              description="x86 Assembly game inside Linux kernel using C calling convention, linked lists, ioctl dispatcher, tasklet, etc."
+              project_title="Text-Mode Missile Command"
+            ></ProjectCard>
+            <ProjectCard
+              image="/project images/puzzle_cube-300h.jpg"
+              project_title="Puzzle Cube"
+            ></ProjectCard>
+            <ProjectCard
+              image="/project images/windosill-300h.jpg"
+              project_title="WINDOSILL"
+            ></ProjectCard>
           </div>
-          <h1>Most famous places</h1>
-          <span className="landing-page-text7">Recommended</span>
         </div>
       </div>
       <footer className="landing-page-footer">
-        <span className="landing-page-text8">Kitta</span>
+        <span className="landing-page-text7">Kitta</span>
         <div className="landing-page-icon-group1">
           <a
             href="mailto:xh40@illinois.edu?subject="
